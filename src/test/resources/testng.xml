@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ZOE_HIS5接口自动化测试">
+    <test name="数据处理">
+        <classes>
+            <class name="com.xx.pojo.DataProcessing"></class>
+        </classes>
+    </test>
+    <test name="登录接口1">
+        <classes>
+            <class name="com.xx.cases.CheckUserStatus"></class>
+            <parameter name="sheetIndex" value="0"></parameter>
+            <parameter name="sheetNum" value="1"></parameter>
+        </classes>
+    </test>
+    <test name="登录接口2">
+        <classes>
+            <class name="com.xx.cases.CheckLogin"></class>
+            <parameter name="sheetIndex" value="1"></parameter>
+            <parameter name="sheetNum" value="1"></parameter>
+        </classes>
+    </test>
+
+    <parameter name="classFullName" value="com.xx.pojo.CaseInfo"></parameter>
+
+</suite>
